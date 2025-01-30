@@ -27,18 +27,13 @@ int main(int argc, char const *argv[])
     }
 
     Buffer *b = allocate_buffer(file);
-    char ch;
 
-    while ((ch = get_next_char(b, NULL, 0)) != EOF)
+    Token token;
+    while ((token = get_token(b)).type != END_OF_FILE)
     {
-        if (ch == ERR)
-        {
-            printf("Error retrieving character.\n");
+        if (token.type == UNKNOWN)
             break;
-        }
-        printf("%c", ch);
     }
-    printf("\n");
 
     dealocate_buffer(b);
     b = NULL;
