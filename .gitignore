@@ -4,3 +4,4 @@
 LAB 2/.vscode/c_cpp_properties.json
 LAB 2/.vscode/launch.json
 LAB 2/.vscode/settings.json
+*.o
