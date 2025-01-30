@@ -1,3 +1,5 @@
+// TEST WITH: gcc -I*.h funcs.c main.c -o lexer.o -fsanitize=address -g  && ./lexer.o 3 C-\ tests/SSORT.c
+
 #include <stdio.h>
 #include <stdlib.h>
 #include "funcs.h"
