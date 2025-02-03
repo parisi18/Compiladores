@@ -2,7 +2,7 @@
 
 #include <stdio.h>
 #include <stdlib.h>
-#include "funcs.h"
+#include "lexer.h"
 
 void verify_args(int argc, int expected)
 {
